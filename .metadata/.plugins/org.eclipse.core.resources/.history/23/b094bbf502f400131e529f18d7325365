@@ -1,0 +1,16 @@
+Ext.define('JamaatApp.view.Main', {
+    extend: 'Ext.tab.Carousel',
+    xtype: 'main',
+    requires: [
+        'Ext.TitleBar'
+    ],
+	config: {
+	    direction: 'vertical',
+	    items: [{
+	        html: 'Settings Form'
+	    },{
+	        itemId: 'mainview',
+	        cls: 'textview'
+	    }]
+	}
+});

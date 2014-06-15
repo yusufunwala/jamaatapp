@@ -1,0 +1,20 @@
+Ext.define('JamaatApp.view.Main', {
+    extend: 'Ext.Carousel',
+    xtype: 'main',
+    requires: [
+        'Ext.TitleBar'
+    ],
+	config: {
+		xtype: 'titlebar',
+		cls: 'title',
+		docked: 'top',
+		title: 'Do I need my Umbrella?',
+	    direction: 'vertical',
+	    items: [{
+	        html: 'Settings Form'
+	    },{
+	        itemId: 'mainview',
+	        cls: 'textview'
+	    }]
+	}
+});

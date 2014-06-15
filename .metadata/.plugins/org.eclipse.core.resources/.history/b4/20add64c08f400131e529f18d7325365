@@ -1,0 +1,36 @@
+Ext.define('JamaatApp.view.SettingsView', {
+    extend: 'Ext.form.Panel',
+    xtype: 'settingsview',
+    
+    config: {
+        title: 'SettingsView',
+        
+        items: [
+            {
+                name: 'geo',
+                xtype: 'togglefield',
+                label: 'Geo'
+            },
+            {
+                name: 'units',
+                xtype: 'selectfield',
+                label: 'Units'
+            },
+            {
+                name: 'city',
+                xtype: 'textfield',
+                label: 'City'
+            },
+            {
+                name: 'country',
+                xtype: 'textfield',
+                label: 'Country'
+            },
+            {
+                xtype: 'button',
+                text: 'Submit',
+                ui: 'confirm'
+            }
+        ]        
+    }
+});
